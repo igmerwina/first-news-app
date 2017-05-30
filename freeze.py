@@ -7,6 +7,5 @@ def detail():
     for row in get_csv():
         yield {'row_id': row['id']}
 
-
 if __name__ == '__main__':
     freezer.freeze()
