@@ -3,6 +3,7 @@ from flask import Flask
 from flask import abort
 from flask import render_template
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 
 def get_csv():
     csv_path = './static/la-riots-deaths.csv'
